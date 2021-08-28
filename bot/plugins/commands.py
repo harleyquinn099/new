@@ -13,7 +13,7 @@ db = Database()
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
     update_channel 
-    if update_channel = "https://t.me/joinchat/oElQ06pIs8wwYzQ1"
+    if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
             if user.status == "kicked out":
