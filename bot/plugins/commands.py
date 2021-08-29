@@ -123,7 +123,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/9914bd33860f972937b9e.jpg",
+        photo="https://telegra.ph/file/9ff1314219bef53cd5a3c.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
