@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@dmx_all1"
+    update_channel = "@dmxall_2"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\സിനിമ വേണം എങ്കിൽ അത്യം ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ആവുക. 😁\n\nJoin ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😁</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/dmx_all1")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/dmx_all2")]
               ])
             )
             return
@@ -59,7 +59,7 @@ async def start(bot, update):
                 ],
                 [
                     InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/dmx_chating'),
-                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/dmx_all1')
+                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/dmxall_2')
                 ]
             ]
         )
@@ -79,7 +79,7 @@ async def start(bot, update):
                 ],
                 [
                     InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/dmx_chating'),
-                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/dmx_all1')
+                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/dmxall_2')
                 ]
             ]
         )
@@ -113,7 +113,7 @@ async def start(bot, update):
         InlineKeyboardButton('🪄 🄶🅁🄾🅄🄿', url='https://t.me/dmx_chating'),
         InlineKeyboardButton('👿 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/basildmx')
         ],[
-        InlineKeyboardButton('⭕️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ⭕️', url ='https://t.me/dmx_all1')
+        InlineKeyboardButton('⭕️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ⭕️', url ='https://t.me/dmxall_2')
         ],[
         InlineKeyboardButton('❌️ 𝙃𝙀𝙇𝙋', callback_data="help"),
         InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
