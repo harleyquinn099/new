@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@dmxall_2"
+    update_channel = "@DB_ROBOTS"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -22,14 +22,14 @@ async def start(bot, update):
         except UserNotParticipant:
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
-                text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\സിനിമ വേണം എങ്കിൽ അത്യം ഞങ്ങളുടെ ചാനലിൽ ജോയിൻ ആവുക. 😁\n\nJoin ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😁</b>",
+                text="<b>😌 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 📑\n\n TO ACSEES TO GET DESIRED MOVIES FILES U SHOULD JOIN OUR CHANNEL,AFTER U AGAIN SEND /start COMMAND . THAT'S ALL \n\🛡️✌️ THANK YOU 🍻❤️</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/dmx_all2")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/DB_ROBOTS")]
               ])
             )
             return
         except Exception:
-            await update.reply_text("Something Wrong. Contact my Support Group")
+            await update.reply_text("SRY DIDN'T JOINED OUR @DB_ROBOTS CHANNEL THAT'S Y THIS IS HAPPENING")
             return
     try:
         file_uid = update.command[1]
@@ -49,17 +49,17 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = "<b>┈••✿ @Dmx_chating ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/joinchat/kWlkjIGsVh44M2Y1\n\n➠Gʀᴏᴜᴘ : https://t.me/dmx_chating</b>",
+                caption = "<b>┈••✿ UMR GROUP ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/UNI_MOVIES_BOX\n\n➠Gʀᴏᴜᴘ : https://t.me/UM_REQUESTS</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⭕️ 𝙎𝙃𝘼𝙍𝙀 ⭕️', url='https://t.me/share/url?url=https://t.me/dmx_chating')
+                    InlineKeyboardButton('⭕️ 𝙎𝙃𝘼𝙍𝙀 ⭕️', url='https://t.me/share/url?url=https://t.me/UM_REQUESTS')
                 ],
                 [
-                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/dmx_chating'),
-                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/dmxall_2')
+                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/UM_REQUESTS'),
+                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/UNI_MOVIES_BOX')
                 ]
             ]
         )
@@ -75,11 +75,11 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⭕️ 𝙎𝙃𝘼𝙍𝙀 ⭕️', url='https://t.me/share/url?url=https://t.me/dmx_chating')
+                    InlineKeyboardButton('⭕️ 𝙎𝙃𝘼𝙍𝙀 ⭕️', url='https://t.me/share/url?url=https://t.me/DB_ROBOTS')
                 ],
                 [
-                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/dmx_chating'),
-                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/dmxall_2')
+                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/UM_REQUESTS'),
+                    InlineKeyboardButton('‼️ 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/UNI_MOVIES_BOX')
                 ]
             ]
         )
@@ -97,7 +97,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ⚠️', url="https://t.me/joinchat/kWlkjIGsVh44M2Y1"
+                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗚𝗥𝗢𝗨𝗣 ⚠️', url="https://t.me/DB_ROBOTS"
                                 )
                         ]
                     ]
@@ -110,12 +110,12 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('🪄 🄶🅁🄾🅄🄿', url='https://t.me/dmx_chating'),
-        InlineKeyboardButton('👿 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/basildmx')
+        InlineKeyboardButton('🛡️ 🄶🅁🄾🅄🄿', url='https://t.me/UM_REQUESTS'),
+        InlineKeyboardButton('👼 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/DEEKS_04_8')
         ],[
-        InlineKeyboardButton('⭕️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ⭕️', url ='https://t.me/dmxall_2')
+        InlineKeyboardButton('⚔️ 𝙅𝙊𝙄𝙉 𝙊𝙐𝙍 𝘾𝙃𝘼𝙉𝙉𝙀𝙇 ⚔️', url ='https://t.me/db_robots')
         ],[
-        InlineKeyboardButton('❌️ 𝙃𝙀𝙇𝙋', callback_data="help"),
+        InlineKeyboardButton('🤠 𝙃𝙀𝙇𝙋', callback_data="help"),
         InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
         ]]
     
@@ -123,7 +123,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/9ff1314219bef53cd5a3c.jpg",
+        photo="https://telegra.ph/file/3edda07f6b4ba518ac137.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
@@ -145,7 +145,7 @@ async def help(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/faee21e9b4c069c2b4e0f.jpg",
+        photo="https://telegra.ph/file/3edda07f6b4ba518ac137.jpg",
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
